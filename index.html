@@ -195,21 +195,48 @@
             line-height: 1.7;
         }
         
-        .duration {
+        .badge {
             display: inline-flex;
             align-items: center;
-            background: rgba(76, 205, 196, 0.2);
-            color: #4ecdc4;
             padding: 8px 16px;
             border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 600;
             margin-top: 20px;
-            border: 1px solid rgba(76, 205, 196, 0.3);
+            margin-right: 10px;
+            border: 1px solid;
+        }
+        
+        .duration {
+            background: rgba(76, 205, 196, 0.2);
+            color: #4ecdc4;
+            border-color: rgba(76, 205, 196, 0.3);
         }
         
         .duration::before {
             content: '⏱️';
+            margin-right: 8px;
+        }
+        
+        .concepts {
+            background: rgba(76, 205, 196, 0.2);
+            color: #4ecdc4;
+            border-color: rgba(76, 205, 196, 0.3);
+        }
+        
+        .concepts::before {
+            content: '🧠';
+            margin-right: 8px;
+        }
+        
+        .hands-on {
+            background: rgba(255, 107, 107, 0.2);
+            color: #ff6b6b;
+            border-color: rgba(255, 107, 107, 0.3);
+        }
+        
+        .hands-on::before {
+            content: '🔧';
             margin-right: 8px;
         }
         
@@ -317,7 +344,8 @@
                 <div class="block-content">
                     Embark on a comprehensive exploration of the AI ecosystem. We'll dissect use cases across industries, categorize AI implementations, and map the multidimensional risk landscape. Through interactive discussions and hands-on exercises, you'll develop a systematic approach to identifying vulnerabilities and crafting detection mechanisms. This foundational session transforms abstract concepts into practical frameworks you can immediately apply.
                 </div>
-                <div class="duration">3 Hours Intensive</div>
+                <div class="badge concepts">Concepts</div>
+                <div class="badge hands-on">Hands-on</div>
             </div>
             
             <div class="block block2">
@@ -332,7 +360,8 @@
                 <div class="block-content">
                     Dive into the cutting edge of AI: autonomous agents. Understand how agentic AI amplifies both capabilities and risks compared to traditional AI systems. You'll construct your first agent from scratch, implement evaluation frameworks, and discover the unique vulnerabilities that emerge when AI systems gain autonomy. This hands-on exploration reveals both the promise and perils of self-directed AI.
                 </div>
-                <div class="duration">2 Hours Building</div>
+                <div class="badge concepts">Concepts</div>
+                <div class="badge hands-on">Hands-on</div>
             </div>
             
             <div class="block block3">
@@ -340,18 +369,18 @@
                     <div class="block-icon">⚡</div>
                     <div class="block-info">
                         <div class="block-number">BLOCK 03 // FRIDAY LATE AFTERNOON</div>
-                        <div class="block-title">Catalyst</div>
+                        <div class="block-title">Capstone</div>
                         <div class="block-subtitle">Project ignition phase</div>
                     </div>
                 </div>
                 <div class="block-content">
-                    Transform theory into practice. Form teams and select your challenge: conduct a comprehensive risk analysis of a real-world AI use case, or dive deep by implementing and then mitigating a specific vulnerability. This is where your creativity meets technical rigor, setting the stage for your capstone presentation.
+                    Transform theory into practice. Split up and select your challenge: conduct a comprehensive risk analysis of a real-world AI use case, or dive deep by implementing and then mitigating a specific vulnerability. This is where your creativity meets technical rigor, setting the stage for your capstone presentation.
                     
                     <div class="capstone-note">
-                        <strong>Capstone Options:</strong> Go broad with holistic analysis or narrow with vulnerability implementation—your choice, your expertise showcase.
+                        <strong>Capstone Options:</strong> Go broad with comprehensive analysis or narrow with vulnerability implementation—your choice, your expertise showcase.
                     </div>
                 </div>
-                <div class="duration">1.5 Hours Planning</div>
+                <div class="badge hands-on">Hands-on</div>
             </div>
             
             <div class="block block4">
@@ -359,14 +388,14 @@
                     <div class="block-icon">🎯</div>
                     <div class="block-info">
                         <div class="block-number">BLOCK 04 // MONDAY FULL DAY</div>
-                        <div class="block-title">Synthesis</div>
-                        <div class="block-subtitle">Knowledge crystallization summit</div>
+                        <div class="block-title">Show and Tell</div>
+                        <div class="block-subtitle">Project completion and presentation</div>
                     </div>
                 </div>
                 <div class="block-content">
-                    The culmination of your learning journey. Refine your projects through collaborative problem-solving and expert guidance. Then step into the spotlight: present your findings, defend your risk assessments, and engage in peer review. This isn't just presentation—it's demonstration of your ability to think like an AI risk strategist. Each presentation becomes a case study, expanding everyone's risk intelligence.
+                    The culmination of your learning journey. Bring your questions, finish your projects, and present your work. Discuss with others what could be done next and how to improve your risk assessments. This isn't just presentation—it's demonstration of your ability to think like an AI risk strategist. Each presentation becomes a case study, expanding everyone's risk intelligence.
                 </div>
-                <div class="duration">5-6 Hours Mastery</div>
+                <div class="badge hands-on">Hands-on</div>
             </div>
         </div>
     </div>

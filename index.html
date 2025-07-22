@@ -294,6 +294,70 @@
             font-size: 1.2rem;
         }
         
+        .links-section {
+            background: linear-gradient(135deg, rgba(76, 205, 196, 0.1), rgba(255, 107, 107, 0.1));
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .links-section::before {
+            content: '🔗';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            background: #0f0f23;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        
+        .links-section h2 {
+            color: #4ecdc4;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .link-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .link-card h3 {
+            color: #4ecdc4;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .link-card p {
+            color: #d0d0e0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
         @media (max-width: 768px) {
             .title {
                 font-size: 2.5rem;
@@ -398,6 +462,20 @@
                 <div class="badge hands-on">Hands-on</div>
             </div>
         </div>
+        
+        <section class="links-section">
+            <h2>Additional Resources</h2>
+            <div class="links-grid">
+                <a href="https://github.com/your-username/ai-risks-htw-2025" class="link-card" target="_blank">
+                    <h3>📚 Repository</h3>
+                    <p>Access the complete workshop materials, code examples, and supporting documentation on GitHub.</p>
+                </a>
+                <a href="ai_landscape_infographic.html" class="link-card">
+                    <h3>🗺️ AI Landscape Infographic</h3>
+                    <p>Explore our visual representation of the AI ecosystem and risk landscape to better understand the workshop context.</p>
+                </a>
+            </div>
+        </section>
     </div>
 </body>
 </html>
